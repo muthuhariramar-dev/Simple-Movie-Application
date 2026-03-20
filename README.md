@@ -1,16 +1,86 @@
-# React + Vite
+# 🎬 MovieVault
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> *Your personal cinema companion — discover, search, and vibe with movies.*
 
-Currently, two official plugins are available:
+Built this as a learning project to explore React, async APIs, and real-world frontend development. It talks to the TMDB API and actually works! 🚀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🧐 What is this?
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**MovieVault** is a React-based movie discovery app that pulls real data from The Movie Database (TMDB). You can browse popular movies, search for any title, and add favourites — all wrapped in a clean, cinematic UI.
 
-## Expanding the ESLint configuration
+No fluff. Just movies. 🍿
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ What it does
+
+- 🔥 Browse currently popular movies (live from TMDB)
+- 🔍 Search any movie by title
+- ❤️ Mark your favourites
+- 📅 See release year at a glance
+- 🖼️ Beautiful poster grid layout
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Tech |
+|-------|------|
+| ⚛️ Frontend | React 18 |
+| ⚡ Build Tool | Vite |
+| 🌐 API | TMDB (The Movie Database) |
+| 🎨 Styling | CSS Modules |
+| 🔀 Routing | React Router DOM |
+
+---
+
+## 🚀 Run it locally
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/YOUR_USERNAME/movie-vault.git
+
+# 2. Jump in
+cd movie-vault
+
+# 3. Install dependencies
+npm install
+
+# 4. Add your TMDB API key
+# Create a .env file in the root:
+echo "VITE_API_KEY=your_tmdb_api_key_here" > .env
+
+# 5. Start the dev server
+npm run dev
+```
+
+> 🔑 Get a free API key at [themoviedb.org](https://www.themoviedb.org/settings/api)
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   └── MovieCard.jsx      # Individual movie card
+├── services/
+│   └── api.js             # TMDB API calls
+├── css/
+│   ├── Home.css
+│   └── MovieCard.css
+└── App.jsx
+```
+
+---
+
+## 🙋 Author
+
+Made with 💛 by **Muthuhariramar**
+— learning React one bug at a time 😄
+
+---
+
+> *This project uses the TMDB API but is not endorsed or certified by TMDB.*
